@@ -11,10 +11,10 @@ pipe = StableDiffusionPipeline.from_pretrained("CompVis/stable-diffusion-v1-4",
 
 st.title("AI Art Tool")
 st.write("Text to Image generator")
+st.write(torch.version)
 
 promp = st.text_input("Input promp:")
 st.write(promp)
-st.write(pipe)
 
 
 
